@@ -1,0 +1,50 @@
+/* OVERRIDES */
+.bg-warning {
+    background-color: #DE545B !important; /* A different shade of red */
+}
+
+.bg-primary {
+    background-color: #3C458B !important; /* A different shade of blue, if you wish */
+}
+
+.text-danger {
+    color: #DE545B !important; /* A different shade of red */
+}
+
+.text-primary {
+    color: #3C458B !important; /* A different shade of blue, for example */
+}
+
+.button-danger {
+    color: #DE545B !important;
+}
+
+.button-primary {
+    color: #3C458B !important;
+}
+
+/*  NAVIGATION BAR */
+.nav-link-hover:hover {
+    color: #DE545B !important; /* Use the warning color */
+}
+
+.navbar span {
+    color: #DE545B;
+}
+
+/* Dropdown menu styling to match the navbar */
+.navbar .dropdown-menu {
+    background-color: #343a40; /* Same as navbar background */
+    /* If you have a specific font family in use for the navbar, apply it here as well */
+  }
+  
+  /* Dropdown item styling for text color and hover effects */
+  .navbar .dropdown-menu .dropdown-item {
+    color: #ffffff; /* White text for dropdown items */
+    font-weight: normal; /* Match the font weight as per your preference, adjust if needed */
+  }
+  
+  .navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #DE545B; /* Optional: Change background color on hover to match the "warning" theme */
+    color: white; /* Change text color on hover for better contrast, if needed */
+  }
