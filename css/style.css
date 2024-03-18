@@ -25,11 +25,11 @@
 
 /*  NAVIGATION BAR */
 .nav-link-hover:hover {
-    color: #DE545B !important; /* Use the warning color */
+    color: #3C458B !important; /* Use the warning color */
 }
 
 .navbar span {
-    color: #DE545B;
+    color: #3C458B;
 }
 
 /* Dropdown menu styling to match the navbar */
