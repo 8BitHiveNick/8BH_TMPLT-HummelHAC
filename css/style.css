@@ -85,7 +85,7 @@ body {
 /* HOME */
 
 #home {
-    padding-top: 80px; /* Adjust as needed to ensure enough space from the navbar */
+    padding-top: 150px; /* Adjust as needed to ensure enough space from the navbar */
     padding-bottom: 80px; /* Provides ample space around the content */
 }
 
@@ -123,6 +123,11 @@ body {
     }
   }
   
+  @media (max-width: 768px) {
+    #home {
+        padding-top: 150px; /* Increased padding for smaller screens */
+    }
+}
   /* SERVICES */
   .icon-background {
     width: 100px;
