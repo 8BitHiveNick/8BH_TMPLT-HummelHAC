@@ -11,6 +11,10 @@
     color: #DE545B !important; /* A different shade of red */
 }
 
+.text-warning {
+    color: #DE545B !important; /* A different shade of red */
+}
+
 .text-primary {
     color: #3C458B !important; /* A different shade of blue, for example */
 }
@@ -23,9 +27,15 @@
     color: #3C458B !important;
 }
 
+/* MAIN */
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
 /*  NAVIGATION BAR */
 .nav-link-hover:hover {
-    color: #3C458B !important; /* Use the warning color */
+    color: #DE545B !important; /* Change to red on hover */
 }
 
 .navbar span {
@@ -48,3 +58,57 @@
     background-color: #DE545B; /* Optional: Change background color on hover to match the "warning" theme */
     color: white; /* Change text color on hover for better contrast, if needed */
   }
+
+  .navbar-brand-logo {
+    max-height: 50px; /* Adjust based on your navbar's height */
+    width: auto; /* Keeps the logo's aspect ratio */
+    margin-right: 15px; /* Adds some space between the logo and the brand name */
+}
+
+@media (max-width: 991px) {
+    .navbar-brand-logo {
+        max-height: 40px; /* Smaller logo for smaller screens, adjust as needed */
+    }
+}
+
+/* HOME */
+
+#home {
+    padding-top: 80px; /* Adjust as needed to ensure enough space from the navbar */
+    padding-bottom: 80px; /* Provides ample space around the content */
+}
+
+#hummelCarousel .carousel-inner img {
+    max-height: 250px; /* Adjust this value as needed */
+    width: auto;
+    margin: auto; /* This centers the images if they are not wide enough to fill the container */
+}
+
+.scroll-container {
+    overflow: hidden;
+    width: 100%;
+    max-height: 300px; /* Set your desired maximum height here */
+    position: relative;
+  }
+  
+  .scrolling-wrapper {
+    display: flex;
+    width: calc(100% * 4); /* Adjust based on the number of images */
+    animation: scroll 10s linear infinite;
+  }
+  
+  .scroll-image {
+    max-height: 300px; /* Set your desired maximum height here */
+    width: auto; /* Adjust width automatically to maintain aspect ratio */
+    object-fit: cover; /* Maintains aspect ratio and covers the height of the container */
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%); /* Scrolls half the total width to loop */
+    }
+  }
+  
