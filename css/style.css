@@ -27,6 +27,10 @@
     color: #3C458B !important;
 }
 
+.btn-primary {
+  color: #3C458B;
+}
+
 /* MAIN */
 
 body {
@@ -44,7 +48,7 @@ body {
 
 /* Dropdown menu styling to match the navbar */
 .navbar .dropdown-menu {
-    background-color: #343a40; /* Same as navbar background */
+    background-color: #85888B; /* Same as navbar background */
     /* If you have a specific font family in use for the navbar, apply it here as well */
   }
   
@@ -64,6 +68,13 @@ body {
     width: auto; /* Keeps the logo's aspect ratio */
     margin-right: 15px; /* Adds some space between the logo and the brand name */
 }
+
+/* Targets the button on smaller screens where the dropdown is shown */
+.navbar .dropdown button.btn-primary {
+  background-color: #3C458B; /* Changes the background color */
+  border-color: #ffffff; /* Optional: changes the border color to match */
+}
+
 
 @media (max-width: 991px) {
     .navbar-brand-logo {
@@ -112,3 +123,19 @@ body {
     }
   }
   
+  /* SERVICES */
+  .icon-background {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Creates a circle */
+    background-color: #ff8c00; /* Dark orange for heating */
+    margin: auto;
+    margin-top: -50px; /* Adjust as needed */
+}
+
+/* For the cooling icon, you can directly set the background-color inline or use an additional class */
+.cooling-icon-background {
+    background-color: #007bff; /* Blue for cooling */
+}
+
+/* FontAwesome icon color is set to white by default in the HTML through the "text-white" class */
