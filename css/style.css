@@ -64,7 +64,7 @@ body {
   }
 
   .navbar-brand-logo {
-    max-height: 50px; /* Adjust based on your navbar's height */
+    max-height: 80px; /* Adjust based on your navbar's height */
     width: auto; /* Keeps the logo's aspect ratio */
     margin-right: 15px; /* Adds some space between the logo and the brand name */
 }
@@ -75,11 +75,43 @@ body {
   border-color: #ffffff; /* Optional: changes the border color to match */
 }
 
+/* Adjust the navbar brand container */
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  text-align: left;
+}
+
+/* Style for the main brand name */
+.navbar-brand > div > span {
+  font-size: 1.5em; /* Larger text for "HUMMEL" */
+  display: block; /* Ensure it's on its own line */
+  letter-spacing: 0.25em; /* Adjust as needed */
+  margin-bottom: -12px;
+}
+
+/* Style for the subtext */
+.navbar-brand > div > div {
+  font-size: 0.8em; /* Smaller text for the subtext */
+  display: block; /* Ensure it's on its own line */
+  letter-spacing: normal; /* Adjust if needed for even spacing */
+  margin-top: -12px;
+}
 
 @media (max-width: 991px) {
     .navbar-brand-logo {
-        max-height: 40px; /* Smaller logo for smaller screens, adjust as needed */
+        max-height: 100px; /* Smaller logo for smaller screens, adjust as needed */
     }
+}
+
+@media (max-width: 991px) {
+  .navbar .container-lg .navbar-brand,
+  .navbar .container-lg .navbar-brand > div > span,
+  .navbar .container-lg .navbar-brand > div > div {
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
 }
 
 /* HOME */
