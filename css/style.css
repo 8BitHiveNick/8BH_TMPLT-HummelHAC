@@ -127,6 +127,51 @@ body {
   align-items: center;
 }
 
+/* CTA Button Styling */
+.btn-cta {
+  padding: 8px 20px; /* Adjust padding as needed */
+  white-space: nowrap; /* Prevents the text inside the button from wrapping */
+  color: #ffffff; /* Text color */
+  background-color: #DE545B; /* Button color - Adjust based on your design */
+  border: 2px solid transparent; /* Border color */
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-cta:hover {
+  background-color: #ffffff; /* Background color on hover */
+  color: #DE545B; /* Text color on hover */
+  border-color: #DE545B; /* Border color on hover */
+}
+
+/* Adjust navbar link padding and margin for alignment */
+.navbar-nav .nav-item .btn-cta {
+  margin-left: 15px; /* Adjust as needed for spacing */
+  padding: 8px 15px; /* Button padding */
+}
+
+@media (max-width: 991px) {
+  /* Adjustments for mobile view if necessary */
+  .navbar-nav .nav-item .btn-cta {
+      margin-left: 0; /* Remove extra margin in collapsed navbar */
+      width: 100%; /* Optional: Make the button full width in dropdown */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .navbar .btn-cta {
+      display: inline-block; /* Make the CTA visible in mobile views */
+      margin-left: auto; /* Align it to the right of the navbar */
+      margin-right: 10px; /* Spacing from the edge */
+  }
+
+  /* Optional: Style adjustments for the button when the navbar is collapsed */
+  .navbar .btn-cta {
+      padding: 5px 10px; /* Smaller padding for compact appearance */
+      font-size: 0.9rem; /* Adjust font size for mobile */
+  }
+}
+
 /* HOME */
 
 #home {
