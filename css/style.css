@@ -184,14 +184,14 @@ body {
     #home {
         /* Increase padding-top to accommodate the height of the navbar when it's collapsed */
         /* This value may need to be adjusted depending on the actual height of your collapsed navbar */
-        padding-top: 120px; /* Adjust this value based on your navbar's height in mobile view */
+        padding-top: 150px !important; /* Adjust this value based on your navbar's height in mobile view */
     }
 }
 
 /* Further adjustment if navbar height significantly changes */
 @media (max-width: 768px) {
     #home {
-        padding-top: 140px; /* Adjust as needed for smaller devices */
+        padding-top: 180px; /* Adjust as needed for smaller devices */
     }
 }
 
