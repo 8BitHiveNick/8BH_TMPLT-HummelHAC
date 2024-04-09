@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/aos.css">
     <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -194,9 +195,19 @@
         <div class="text-center">
             <h2 class="sec-sub-title mb-4">Our Recent Work</h2>
         </div>
-        <!-- Gallery Here -->
+        <div class="image-slider" id="imageSlider">
+            <div class="slide" style="background-image: url('img/gallery/bt1.jpg');"></div>
+            <div class="slide" style="background-image: url('img/gallery/bt2.jpg');"></div>
+            <div class="slide" style="background-image: url('img/gallery/bt3.jpg');"></div>
+            <div class="slide" style="background-image: url('img/gallery/bt4.jpg');"></div>
+            <div class="slide" style="background-image: url('img/gallery/bt5.jpg');"></div>
+            <div class="slide" style="background-image: url('img/gallery/bt6.jpg');"></div>
+            <div class="slide" style="background-image: url('img/gallery/bt7.jpg');"></div>
+            <div class="slide" style="background-image: url('img/gallery/bt8.jpg');"></div>
+        </div>
     </div>
 </section>
+
 
 <!-- FAQ SECTION -->
 <section id="testimonials" class="py-5 bg-light">
@@ -234,8 +245,25 @@
 
 <script src="js/aos.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
     AOS.init();
+</script>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.opacity = "0";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        slides[slideIndex-1].style.opacity = "1";
+        setTimeout(showSlides, 4000); // Change image every 4 seconds
+    }
 </script>
 </body>
 </html>
