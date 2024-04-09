@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/aos.css">
     <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -209,13 +211,34 @@
 </section>
 
 
-<!-- FAQ SECTION -->
+<!-- TESTIMONIALS SECTION -->
 <section id="testimonials" class="py-5 bg-light">
     <div class="container">
         <div class="text-center">
             <h2 class="sec-sub-title mb-4">testimonials</h2>
         </div>
-        <!-- FAQ Accordion Here -->
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">This team transformed our home with their excellent service. Highly recommend!</p>
+                    <p class="testimonial-author">- Alex Smith</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Professional, courteous, and committed to quality. A fantastic experience from start to finish.</p>
+                    <p class="testimonial-author">- Jamie Doe</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Their expertise and attention to detail were evident. They went above and beyond.</p>
+                    <p class="testimonial-author">- Chris Taylor</p>
+                </div>
+            </div>
+        </div>
+        
+        
     </div>
 </section>
 
@@ -312,6 +335,7 @@
 
 <script src="js/aos.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
     AOS.init();
@@ -332,5 +356,6 @@
         setTimeout(showSlides, 4000); // Change image every 4 seconds
     }
 </script>
+
 </body>
 </html>

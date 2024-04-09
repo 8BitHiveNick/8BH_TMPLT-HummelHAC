@@ -416,3 +416,48 @@ h2.sec-sub-title {
 .accordion-body {
   background-color: #f8f9fa;
 }
+
+/* TESTIMONIALS */
+.testimonial-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  padding-left: 50px; /* Make room for the quote icon */
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-left: 5px solid #3C458B; /* A colored border for a pop of color */
+  margin: 20px 0;
+}
+
+.testimonial-card::before {
+  content: '“'; /* Unicode character for left double quotation mark */
+  font-size: 80px;
+  position: absolute;
+  left: 10px; /* Adjust based on padding */
+  top: 10px; /* Adjust to fit */
+  color: #007bff; /* Match the border or choose another accent color */
+  opacity: 0.2; /* Subtle appearance */
+}
+
+.testimonial-card::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #3C458B, #DE545B); /* A gradient at the bottom */
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: 15px; /* Smooths out the bottom corner */
+  border-bottom-right-radius: 15px; /* Smooths out the bottom corner */
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-author {
+  text-align: right;
+  font-weight: bold;
+  color: #3C458B; /* Color to match the theme */
+}
