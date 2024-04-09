@@ -121,6 +121,10 @@ body {
     padding-bottom: 80px; /* Provides ample space around the content */
 }
 
+#home img {
+  height: 300px;
+}
+
 #hummelCarousel .carousel-inner img {
     max-height: 250px; /* Adjust this value as needed */
     width: auto;
@@ -136,28 +140,35 @@ body {
   
   .scrolling-wrapper {
     display: flex;
-    width: calc(100% * 4); /* Adjust based on the number of images */
-    animation: scroll 10s linear infinite;
+    width: calc(100% * 8); /* Adjust based on the number of images */
+    animation: scroll 20s linear infinite;
   }
   
   .scroll-image {
     max-height: 300px; /* Set your desired maximum height here */
     width: auto; /* Adjust width automatically to maintain aspect ratio */
     object-fit: cover; /* Maintains aspect ratio and covers the height of the container */
+    transition: transform 0.5s ease-in-out; /* Smoothens the start and end of the scrolling */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds depth to the images */
+    margin-right: 15px; /* Adds a small gap between images */
+    border-radius: 15px;
   }
   
   @keyframes scroll {
-    from {
+    0% {
       transform: translateX(0);
     }
-    to {
+    100% {
       transform: translateX(-50%); /* Scrolls half the total width to loop */
     }
   }
   
   @media (max-width: 768px) {
     #home {
-        padding-top: 150px; /* Increased padding for smaller screens */
+        padding-top: 100px; /* Adjusted for smaller screens */
+    }
+    .scrolling-wrapper {
+        width: calc(100% * 8); /* Ensure this matches the total number of images including duplicates */
     }
 }
   /* SERVICES */
