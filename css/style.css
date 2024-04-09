@@ -351,3 +351,23 @@ h2.sec-sub-title {
   color: #3f668f;
   border-color: #3f668f;
 }
+
+/* BRANDS */
+.brands-list .brand {
+  margin: 20px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: inline-block;
+  transform: rotate(0deg); /* Ensure there's no rotation initially */
+}
+
+.brand-logo {
+  width: 200px; /* Adjusted to your logo size */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: block; /* Ensures the image scales properly */
+}
+
+.brands-list .brand:hover {
+  transform: scale(1.05) rotate(5deg); /* Scales up and rotates slightly on hover */
+  opacity: 0.8; /* Slightly reduces opacity to add focus */
+}
+
