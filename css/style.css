@@ -130,10 +130,25 @@ body {
 /* HOME */
 
 #home {
-    padding-top: 150px; /* Adjust as needed to ensure enough space from the navbar */
+    padding-top: 100px; /* Adjust as needed to ensure enough space from the navbar */
     padding-bottom: 80px; /* Provides ample space around the content */
 }
 
+/* Responsive adjustments for smaller screens */
+@media (max-width: 991px) {
+    #home {
+        /* Increase padding-top to accommodate the height of the navbar when it's collapsed */
+        /* This value may need to be adjusted depending on the actual height of your collapsed navbar */
+        padding-top: 120px; /* Adjust this value based on your navbar's height in mobile view */
+    }
+}
+
+/* Further adjustment if navbar height significantly changes */
+@media (max-width: 768px) {
+    #home {
+        padding-top: 140px; /* Adjust as needed for smaller devices */
+    }
+}
 
 
 #hummelCarousel .carousel-inner img {
