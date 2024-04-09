@@ -397,3 +397,22 @@ h2.sec-sub-title {
 .slide:first-child {
   opacity: 1;
 }
+
+/* FAQ */
+.accordion-button {
+  background-color: #3C458B;
+  color: white;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #DE545B;
+  color: white;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  background-color: #f8f9fa;
+}
