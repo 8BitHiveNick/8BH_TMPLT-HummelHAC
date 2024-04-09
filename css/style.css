@@ -114,6 +114,19 @@ body {
   }
 }
 
+.sec-sub-title {
+  text-transform: uppercase;
+  display: inline-flex;
+  background: #f3f3f5;
+  box-shadow: 9px 9px 12px #e4e4e4, -9px -9px 12px #ffffff;
+  padding: 3px 10px;
+  border-radius: 40px;
+  color: #DE545B;
+  font-size: 28px;
+  justify-content: center;
+  align-items: center;
+}
+
 /* HOME */
 
 #home {
@@ -121,9 +134,7 @@ body {
     padding-bottom: 80px; /* Provides ample space around the content */
 }
 
-#home img {
-  height: 300px;
-}
+
 
 #hummelCarousel .carousel-inner img {
     max-height: 250px; /* Adjust this value as needed */
@@ -180,6 +191,13 @@ body {
     margin: auto;
     margin-top: -50px; /* Adjust as needed */
 }
+
+h2.sec-sub-title {
+  text-align: center; /* Explicitly center-align the text */
+  width: 50%; /* Ensure the element spans the full width */
+  margin: 0 auto; /* Center-align the element within its parent container */
+}
+
 
 /* For the cooling icon, you can directly set the background-color inline or use an additional class */
 .cooling-icon-background {
