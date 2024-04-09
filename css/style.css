@@ -116,7 +116,7 @@ body {
 
 .sec-sub-title {
   text-transform: uppercase;
-  display: inline-flex;
+  display: inline-block;
   background: #f3f3f5;
   box-shadow: 9px 9px 12px #e4e4e4, -9px -9px 12px #ffffff;
   padding: 3px 10px;
@@ -186,15 +186,50 @@ body {
   .icon-background {
     width: 100px;
     height: 100px;
-    border-radius: 50%; /* Creates a circle */
-    background-color: #ff8c00; /* Dark orange for heating */
+    border-radius: 50%; /* Maintains the circle shape */
+    background-color: #ff8c00; /* Example: Dark orange for heating. Adjust as needed for each service */
     margin: auto;
-    margin-top: -50px; /* Adjust as needed */
+    margin-top: -50px; /* Pulls the icon above the card */
+    position: relative; /* Ensures the shadow respects the icon's shape */
+    z-index: 1; /* Elevates the icon above other elements */
+    
+    /* Shadow to create a "lifting" effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    
+    /* Transition for a smooth "pop" effect on hover */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .icon-background:hover {
+    /* Slightly "lifts" the icon on hover for added interactivity */
+    transform: translateY(-5px);
+    
+    /* Enhances the shadow to reinforce the lifting effect */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.19), 0 9px 9px rgba(0, 0, 0, 0.23);
+  }
+  
+  .card {
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Centers children horizontally in the card */
 }
+
+.card-body {
+  text-align: center; /* Centers text and inline elements like buttons */
+}
+
+.card .icon-background {
+  display: flex; /* Uses flexbox for centering */
+  justify-content: center; /* Centers the child elements horizontally */
+  align-items: center; /* Centers the child elements vertically */
+  margin-left: auto; /* Additional centering for margin auto */
+  margin-right: auto; /* Additional centering for margin auto */
+}
+
 
 h2.sec-sub-title {
   text-align: center; /* Explicitly center-align the text */
-  width: 50%; /* Ensure the element spans the full width */
+  width: 100%; /* Ensure the element spans the full width */
   margin: 0 auto; /* Center-align the element within its parent container */
 }
 
@@ -204,4 +239,55 @@ h2.sec-sub-title {
     background-color: #007bff; /* Blue for cooling */
 }
 
-/* FontAwesome icon color is set to white by default in the HTML through the "text-white" class */
+/* Heating Button */
+.btn-heating {
+  background-color: #d6743c; /* Icon background color */
+  color: white;
+  border: 2px solid transparent; /* Prepare for hover state */
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+.btn-heating:hover {
+  background-color: white; /* Swap colors */
+  color: #d6743c; /* Icon background color */
+  border-color: #d6743c; /* Matching border */
+}
+
+/* Cooling Button */
+.btn-cooling {
+  background-color: #007bff; /* Icon background color */
+  color: white;
+  border: 2px solid transparent;
+}
+
+.btn-cooling:hover {
+  background-color: white;
+  color: #007bff;
+  border-color: #007bff;
+}
+
+/* Gas Button */
+.btn-gas {
+  background-color: #973e3e; /* Icon background color */
+  color: white;
+  border: 2px solid transparent;
+}
+
+.btn-gas:hover {
+  background-color: white;
+  color: #973e3e;
+  border-color: #973e3e;
+}
+
+/* Plumbing Button */
+.btn-plumbing {
+  background-color: #3f668f; /* Icon background color */
+  color: white;
+  border: 2px solid transparent;
+}
+
+.btn-plumbing:hover {
+  background-color: white;
+  color: #3f668f;
+  border-color: #3f668f;
+}
