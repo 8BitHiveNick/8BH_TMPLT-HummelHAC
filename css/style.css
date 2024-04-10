@@ -474,3 +474,38 @@ h2.sec-sub-title {
   color: #DE545B;
   border-color: #DE545B;
 }
+
+/* FOOTER */
+.site-footer {
+  background-color: #6e6e6e; /* Dark background for contrast */
+  color: #ffffff; /* White text for readability */
+}
+
+.footer-link {
+  color: #ffffff; /* Ensures links are visible */
+  text-decoration: none; /* No underline for a cleaner look */
+}
+
+.footer-link:hover {
+  color: #DE545B; /* Highlight color when hovered */
+}
+
+.site-footer i {
+  color: #ffffff; /* White icon */
+}
+
+.site-footer i:hover {
+  color: #DE545B; /* Highlight color when hovered */
+}
+
+.site-footer h5 {
+  margin-bottom: 20px;
+}
+
+.site-footer p {
+  margin-bottom: 10px;
+}
+
+.list-unstyled li {
+  margin-bottom: 10px; /* Space between list items */
+}
