@@ -254,7 +254,7 @@
             <!-- First Question -->
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         How Often Should I Service My HVAC System?
                     </button>
                 </h2>
@@ -318,49 +318,76 @@
     </div>
 </section>
 
-
-
-
-<!-- CONTACT SECTION -->
 <section id="contact" class="py-5 bg-light">
     <div class="container">
-        <div class="text-center">
-            <h2 class="sec-sub-title mb-4">Get in touch</h2>
+        <div class="row">
+            <div class="text-center">
+                <h2 class="sec-sub-title mb-4">Get in touch</h2>
+            </div>
+            <div class="col-md-4 text-center">
+                <h4>Direct Contact</h4>
+                <p><i class="fas fa-phone-alt" style="color: #DE545B;"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope" style="color: #DE545B;"></i> info@example.com</p>
+                <h4>Social</h4>
+                <p><a href="https://facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-square" style="color: #DE545B;"></i></a></p>
+            </div>
+            <div class="col-md-7">
+                <form action="sendmail.php" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+                
+            </div>
         </div>
-        <!-- Contact Form Here -->
     </div>
 </section>
 
-<footer class="site-footer text-white py-4">
+
+<!-- LOCAL SEO LINKS START -->
+<section id="localSeo" class="py-5 bg-light">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h5>Contact Us</h5>
-                <p>123 Street Name, City, State, 12345</p>
-                <p>Email: info@example.com | Phone: (123) 456-7890</p>
+        <div class="accordion" id="localSeoAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="localSeoHeading">
+                    <!-- Removed 'collapsed' class and set 'aria-expanded' to 'true' -->
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLocalSeo" aria-expanded="true" aria-controls="collapseLocalSeo">
+                        Our Local Service Areas
+                    </button>
+                </h2>
+                <!-- Added 'show' class to make it expanded by default -->
+                <div id="collapseLocalSeo" class="accordion-collapse collapse show" aria-labelledby="localSeoHeading" data-bs-parent="#localSeoAccordion">
+                    <div class="accordion-body text-center">
+                        | <a href="web-developer-medina-oh.html" class="seo-link">Medina, OH - Web Development</a> |
+                        <a href="web-developer-brunswick-oh.html" class="seo-link">Brunswick, OH - Web Development</a> |
+                        <!-- Repeat for other locations -->
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3">
-                <h5>Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#home" class="footer-link">Home</a></li>
-                    <li><a href="#services" class="footer-link">Services</a></li>
-                    <li><a href="#brands" class="footer-link">Brands</a></li>
-                    <li><a href="#gallery" class="footer-link">Gallery</a></li>
-                    <li><a href="#testimonials" class="footer-link">Testimonials</a></li>
-                    <li><a href="#faq" class="footer-link">F.A.Q.</a></li>
-                    <li><a href="#contact" class="footer-link">Contact</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h5>Follow Us</h5>
-                <a href="https://facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
-            </div>
-        </div>
-        <div class="text-center mt-4">
-            <p>&copy; 2024 Hummel Heating & Coolins, Inc. All Rights Reserved.</p>
         </div>
     </div>
+</section>
+
+<!-- LOCAL SEO LINKS END -->
+
+<!-- FOOTER START -->
+<footer class="site-footer text-white py-4">
+    <div class="container text-center">
+        <a href="https://facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <p class="mt-3">&copy; 2024 <span>Hummel Heating & Cooling, Inc.</span> All Rights Reserved.</p>
+    </div>
 </footer>
+<!-- FOOTER END -->
 
     
 

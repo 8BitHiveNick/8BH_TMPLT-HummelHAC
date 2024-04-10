@@ -417,6 +417,16 @@ h2.sec-sub-title {
   background-color: #f8f9fa;
 }
 
+.accordion-button .fa-chevron-down {
+  color: white;
+}
+
+#localSeoAccordion .accordion-header .accordion-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 /* TESTIMONIALS */
 .testimonial-card {
   background: #ffffff;
@@ -477,8 +487,12 @@ h2.sec-sub-title {
 
 /* FOOTER */
 .site-footer {
-  background-color: #6e6e6e; /* Dark background for contrast */
-  color: #ffffff; /* White text for readability */
+  background-color: #A7A7A7; /* Dark background for contrast */
+  color: #ffffff; /* White text for readability */ 
+}
+
+.site-footer span {
+  color: #DE545B;
 }
 
 .footer-link {
@@ -495,7 +509,7 @@ h2.sec-sub-title {
 }
 
 .site-footer i:hover {
-  color: #DE545B; /* Highlight color when hovered */
+  color: #3C458B; /* Highlight color when hovered */
 }
 
 .site-footer h5 {
@@ -509,3 +523,41 @@ h2.sec-sub-title {
 .list-unstyled li {
   margin-bottom: 10px; /* Space between list items */
 }
+
+/* LOCAL SEO */
+/* Adjustments specific to the Local SEO Accordion */
+#localSeoAccordion .accordion-button {
+  background-color: #3C458B; /* Primary color */
+  color: white;
+}
+
+#localSeoAccordion .accordion-button:not(.collapsed) {
+  background-color: #DE545B; /* Slightly darker for contrast when expanded */
+  color: white;
+}
+
+#localSeoAccordion .accordion-button:focus {
+  box-shadow: none;
+}
+
+#localSeoAccordion .accordion-body {
+  background-color: #f8f9fa;
+}
+
+/* Styling for Local SEO links */
+.seo-link {
+  color: #3C458B; /* Normal link color */
+  text-decoration: none;
+}
+
+.seo-link:hover {
+  color: #DE545B; /* Hover state color */
+}
+
+#localSeoAccordion .accordion-header .accordion-button {
+  width: 100%; /* Ensure the button spans the full width of its parent */
+  text-align: center; /* Center the text within the button */
+  justify-content: center; /* Center the button's content for flex display */
+}
+
+/* CONTACT */
