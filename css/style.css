@@ -425,8 +425,9 @@ h2.sec-sub-title {
   padding-left: 50px; /* Make room for the quote icon */
   position: relative;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  border-left: 5px solid #3C458B; /* A colored border for a pop of color */
+  border-left: 5px solid #DE545B; /* A colored border for a pop of color */
   margin: 20px 0;
+  overflow: hidden; /* Ensures that children elements do not overflow the rounded corners */
 }
 
 .testimonial-card::before {
@@ -444,11 +445,9 @@ h2.sec-sub-title {
   position: absolute;
   width: 100%;
   height: 5px;
-  background: linear-gradient(to right, #3C458B, #DE545B); /* A gradient at the bottom */
+  background: linear-gradient(to right, #ffffff, #3C458B); /* A gradient at the bottom */
   bottom: 0;
   left: 0;
-  border-bottom-left-radius: 15px; /* Smooths out the bottom corner */
-  border-bottom-right-radius: 15px; /* Smooths out the bottom corner */
 }
 
 .testimonial-text {
@@ -460,4 +459,18 @@ h2.sec-sub-title {
   text-align: right;
   font-weight: bold;
   color: #3C458B; /* Color to match the theme */
+}
+
+/* Review Button */
+.btn-review {
+  background-color: #DE545B; /* A green background for action encouragement */
+  color: white;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-review:hover {
+  background-color: white;
+  color: #DE545B;
+  border-color: #DE545B;
 }
