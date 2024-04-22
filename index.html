@@ -694,5 +694,30 @@
         setTimeout(showSlides, 4000); // Change image every 4 seconds
       }
     </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navbarHeight = document.querySelector(".navbar").offsetHeight; // dynamically get the navbar height
+        const links = document.querySelectorAll('.navbar a[href^="#"]'); // select all navbar links that are anchor links
+
+        links.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault(); // prevent the default anchor link behavior
+            const href = this.getAttribute("href"); // get the href attribute of the clicked link
+            const targetElement = document.querySelector(href); // find the target element
+
+            if (targetElement) {
+              const targetTop = targetElement.getBoundingClientRect().top; // get the top position of the target element
+              const offsetPosition =
+                targetTop + window.pageYOffset - navbarHeight; // calculate the correct position to scroll to
+
+              window.scrollTo({
+                top: offsetPosition, // set the top position to scroll to
+                behavior: "smooth", // smooth scroll
+              });
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>

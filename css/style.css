@@ -35,6 +35,7 @@
 
 body {
   font-family: "Bai Jamjuree", sans-serif;
+  scroll-padding-top: 500px;
 }
 
 /*  NAVIGATION BAR */
