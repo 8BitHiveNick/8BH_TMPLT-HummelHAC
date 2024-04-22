@@ -1,77 +1,77 @@
 /* OVERRIDES */
 .bg-warning {
-    background-color: #DE545B !important; /* A different shade of red */
+  background-color: #de545b !important; /* A different shade of red */
 }
 
 .bg-primary {
-    background-color: #3C458B !important; /* A different shade of blue, if you wish */
+  background-color: #3c458b !important; /* A different shade of blue, if you wish */
 }
 
 .text-danger {
-    color: #DE545B !important; /* A different shade of red */
+  color: #de545b !important; /* A different shade of red */
 }
 
 .text-warning {
-    color: #DE545B !important; /* A different shade of red */
+  color: #de545b !important; /* A different shade of red */
 }
 
 .text-primary {
-    color: #3C458B !important; /* A different shade of blue, for example */
+  color: #3c458b !important; /* A different shade of blue, for example */
 }
 
 .button-danger {
-    color: #DE545B !important;
+  color: #de545b !important;
 }
 
 .button-primary {
-    color: #3C458B !important;
+  color: #3c458b !important;
 }
 
 .btn-primary {
-  color: #3C458B;
+  color: #3c458b;
 }
 
 /* MAIN */
 
 body {
-    font-family: 'Bai Jamjuree', sans-serif;
+  font-family: "Bai Jamjuree", sans-serif;
 }
 
 /*  NAVIGATION BAR */
 .nav-link-hover:hover {
-    color: #DE545B !important; /* Change to red on hover */
+  color: #de545b !important; /* Change to red on hover */
 }
 
 .navbar span {
-    color: #3C458B;
+  color: #3c458b;
 }
 
 /* Dropdown menu styling to match the navbar */
 .navbar .dropdown-menu {
-    background-color: #85888B; /* Same as navbar background */
-    /* If you have a specific font family in use for the navbar, apply it here as well */
-  }
-  
-  /* Dropdown item styling for text color and hover effects */
-  .navbar .dropdown-menu .dropdown-item {
-    color: #ffffff; /* White text for dropdown items */
-    font-weight: normal; /* Match the font weight as per your preference, adjust if needed */
-  }
-  
-  .navbar .dropdown-menu .dropdown-item:hover {
-    background-color: #DE545B; /* Optional: Change background color on hover to match the "warning" theme */
-    color: white; /* Change text color on hover for better contrast, if needed */
-  }
+  background-color: #85888b; /* Same as navbar background */
+  /* If you have a specific font family in use for the navbar, apply it here as well */
+}
 
-  .navbar-brand-logo {
-    max-height: 80px; /* Adjust based on your navbar's height */
-    width: auto; /* Keeps the logo's aspect ratio */
-    margin-right: 15px; /* Adds some space between the logo and the brand name */
+/* Dropdown item styling for text color and hover effects */
+.navbar .dropdown-menu .dropdown-item {
+  color: #ffffff; /* White text for dropdown items */
+  font-weight: normal; /* Match the font weight as per your preference, adjust if needed */
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #de545b; /* Optional: Change background color on hover to match the "warning" theme */
+  color: white; /* Change text color on hover for better contrast, if needed */
+}
+
+.navbar-brand-logo {
+  max-height: 80px; /* Adjust based on your navbar's height */
+  width: auto; /* Keeps the logo's aspect ratio */
+  margin-right: 15px; /* Adds some space between the logo and the brand name */
 }
 
 /* Targets the button on smaller screens where the dropdown is shown */
 .navbar .dropdown button.btn-primary {
-  background-color: #3C458B; /* Changes the background color */
+  background-color: #3c458b; /* Changes the background color */
   border-color: #ffffff; /* Optional: changes the border color to match */
 }
 
@@ -79,7 +79,7 @@ body {
 .navbar-brand {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
   text-align: left;
 }
 
@@ -100,9 +100,9 @@ body {
 }
 
 @media (max-width: 991px) {
-    .navbar-brand-logo {
-        max-height: 100px; /* Smaller logo for smaller screens, adjust as needed */
-    }
+  .navbar-brand-logo {
+    max-height: 100px; /* Smaller logo for smaller screens, adjust as needed */
+  }
 }
 
 @media (max-width: 991px) {
@@ -121,7 +121,7 @@ body {
   box-shadow: 9px 9px 12px #e4e4e4, -9px -9px 12px #ffffff;
   padding: 3px 10px;
   border-radius: 40px;
-  color: #DE545B;
+  color: #de545b;
   font-size: 28px;
   justify-content: center;
   align-items: center;
@@ -132,15 +132,16 @@ body {
   padding: 8px 20px; /* Adjust padding as needed */
   white-space: nowrap; /* Prevents the text inside the button from wrapping */
   color: #ffffff; /* Text color */
-  background-color: #DE545B; /* Button color - Adjust based on your design */
+  background-color: #de545b; /* Button color - Adjust based on your design */
   border: 2px solid transparent; /* Border color */
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover effect */
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .btn-cta:hover {
   background-color: #ffffff; /* Background color on hover */
-  color: #DE545B; /* Text color on hover */
-  border-color: #DE545B; /* Border color on hover */
+  color: #de545b; /* Text color on hover */
+  border-color: #de545b; /* Border color on hover */
 }
 
 /* Adjust navbar link padding and margin for alignment */
@@ -152,126 +153,127 @@ body {
 @media (max-width: 991px) {
   /* Adjustments for mobile view if necessary */
   .navbar-nav .nav-item .btn-cta {
-      margin-left: 0; /* Remove extra margin in collapsed navbar */
-      width: 100%; /* Optional: Make the button full width in dropdown */
+    margin-left: 0; /* Remove extra margin in collapsed navbar */
+    width: 100%; /* Optional: Make the button full width in dropdown */
   }
 }
 
 /* Responsive adjustments */
 @media (max-width: 991px) {
   .navbar .btn-cta {
-      display: inline-block; /* Make the CTA visible in mobile views */
-      margin-left: auto; /* Align it to the right of the navbar */
-      margin-right: 10px; /* Spacing from the edge */
+    display: inline-block; /* Make the CTA visible in mobile views */
+    margin-left: auto; /* Align it to the right of the navbar */
+    margin-right: 10px; /* Spacing from the edge */
   }
 
   /* Optional: Style adjustments for the button when the navbar is collapsed */
   .navbar .btn-cta {
-      padding: 5px 10px; /* Smaller padding for compact appearance */
-      font-size: 0.9rem; /* Adjust font size for mobile */
+    padding: 5px 10px; /* Smaller padding for compact appearance */
+    font-size: 0.9rem; /* Adjust font size for mobile */
   }
 }
 
 /* HOME */
 
 #home {
-    padding-top: 150px; /* Adjust as needed to ensure enough space from the navbar */
-    padding-bottom: 80px; /* Provides ample space around the content */
+  padding-top: 150px; /* Adjust as needed to ensure enough space from the navbar */
+  padding-bottom: 80px; /* Provides ample space around the content */
 }
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 991px) {
-    #home {
-        /* Increase padding-top to accommodate the height of the navbar when it's collapsed */
-        /* This value may need to be adjusted depending on the actual height of your collapsed navbar */
-        padding-top: 150px !important; /* Adjust this value based on your navbar's height in mobile view */
-    }
+  #home {
+    /* Increase padding-top to accommodate the height of the navbar when it's collapsed */
+    /* This value may need to be adjusted depending on the actual height of your collapsed navbar */
+    padding-top: 150px !important; /* Adjust this value based on your navbar's height in mobile view */
+  }
 }
 
 /* Further adjustment if navbar height significantly changes */
 @media (max-width: 768px) {
-    #home {
-        padding-top: 180px; /* Adjust as needed for smaller devices */
-    }
+  #home {
+    padding-top: 180px; /* Adjust as needed for smaller devices */
+  }
 }
 
-
 #hummelCarousel .carousel-inner img {
-    max-height: 250px; /* Adjust this value as needed */
-    width: auto;
-    margin: auto; /* This centers the images if they are not wide enough to fill the container */
+  max-height: 250px; /* Adjust this value as needed */
+  width: auto;
+  margin: auto; /* This centers the images if they are not wide enough to fill the container */
 }
 
 .scroll-container {
-    overflow: hidden;
-    width: 100%;
-    max-height: 300px; /* Set your desired maximum height here */
-    position: relative;
-  }
-  
-  .scrolling-wrapper {
-    display: flex;
-    width: calc(100% * 8); /* Adjust based on the number of images */
-    animation: scroll 20s linear infinite;
-  }
-  
-  .scroll-image {
-    max-height: 300px; /* Set your desired maximum height here */
-    width: auto; /* Adjust width automatically to maintain aspect ratio */
-    object-fit: cover; /* Maintains aspect ratio and covers the height of the container */
-    transition: transform 0.5s ease-in-out; /* Smoothens the start and end of the scrolling */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds depth to the images */
-    margin-right: 15px; /* Adds a small gap between images */
-    border-radius: 15px;
-  }
-  
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%); /* Scrolls half the total width to loop */
-    }
-  }
-  
-  @media (max-width: 768px) {
-    #home {
-        padding-top: 100px; /* Adjusted for smaller screens */
-    }
-    .scrolling-wrapper {
-        width: calc(100% * 8); /* Ensure this matches the total number of images including duplicates */
-    }
+  overflow: hidden;
+  width: 100%;
+  max-height: 300px; /* Set your desired maximum height here */
+  position: relative;
 }
-  /* SERVICES */
-  .icon-background {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; /* Maintains the circle shape */
-    background-color: #ff8c00; /* Example: Dark orange for heating. Adjust as needed for each service */
-    margin: auto;
-    margin-top: -50px; /* Pulls the icon above the card */
-    position: relative; /* Ensures the shadow respects the icon's shape */
-    z-index: 1; /* Elevates the icon above other elements */
-    
-    /* Shadow to create a "lifting" effect */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    
-    /* Transition for a smooth "pop" effect on hover */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+.scrolling-wrapper {
+  display: flex;
+  width: calc(100% * 8); /* Adjust based on the number of images */
+  animation: scroll 20s linear infinite;
+}
+
+.scroll-image {
+  max-height: 300px; /* Set your desired maximum height here */
+  width: auto; /* Adjust width automatically to maintain aspect ratio */
+  object-fit: cover; /* Maintains aspect ratio and covers the height of the container */
+  transition: transform 0.5s ease-in-out; /* Smoothens the start and end of the scrolling */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds depth to the images */
+  margin-right: 15px; /* Adds a small gap between images */
+  border-radius: 15px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  
-  .icon-background:hover {
-    /* Slightly "lifts" the icon on hover for added interactivity */
-    transform: translateY(-5px);
-    
-    /* Enhances the shadow to reinforce the lifting effect */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.19), 0 9px 9px rgba(0, 0, 0, 0.23);
+  100% {
+    transform: translateX(-50%); /* Scrolls half the total width to loop */
   }
-  
-  .card {
-    display: flex; /* Enables flexbox */
-    flex-direction: column; /* Stacks children vertically */
-    align-items: center; /* Centers children horizontally in the card */
+}
+
+@media (max-width: 768px) {
+  #home {
+    padding-top: 100px; /* Adjusted for smaller screens */
+  }
+  .scrolling-wrapper {
+    width: calc(
+      100% * 8
+    ); /* Ensure this matches the total number of images including duplicates */
+  }
+}
+/* SERVICES */
+.icon-background {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Maintains the circle shape */
+  background-color: #ff8c00; /* Example: Dark orange for heating. Adjust as needed for each service */
+  margin: auto;
+  margin-top: -50px; /* Pulls the icon above the card */
+  position: relative; /* Ensures the shadow respects the icon's shape */
+  z-index: 1; /* Elevates the icon above other elements */
+
+  /* Shadow to create a "lifting" effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
+  /* Transition for a smooth "pop" effect on hover */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.icon-background:hover {
+  /* Slightly "lifts" the icon on hover for added interactivity */
+  transform: translateY(-5px);
+
+  /* Enhances the shadow to reinforce the lifting effect */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.19), 0 9px 9px rgba(0, 0, 0, 0.23);
+}
+
+.card {
+  display: flex; /* Enables flexbox */
+  flex-direction: column; /* Stacks children vertically */
+  align-items: center; /* Centers children horizontally in the card */
 }
 
 .card-body {
@@ -286,17 +288,15 @@ body {
   margin-right: auto; /* Additional centering for margin auto */
 }
 
-
 h2.sec-sub-title {
   text-align: center; /* Explicitly center-align the text */
   width: 100%; /* Ensure the element spans the full width */
   margin: 0 auto; /* Center-align the element within its parent container */
 }
 
-
 /* For the cooling icon, you can directly set the background-color inline or use an additional class */
 .cooling-icon-background {
-    background-color: #007bff; /* Blue for cooling */
+  background-color: #007bff; /* Blue for cooling */
 }
 
 /* Heating Button */
@@ -304,7 +304,8 @@ h2.sec-sub-title {
   background-color: #d6743c; /* Icon background color */
   color: white;
   border: 2px solid transparent; /* Prepare for hover state */
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease; /* Smooth transition */
 }
 
 .btn-heating:hover {
@@ -392,7 +393,6 @@ h2.sec-sub-title {
   transition: opacity 1s ease;
 }
 
-
 /* Initial state for the first slide */
 .slide:first-child {
   opacity: 1;
@@ -400,12 +400,12 @@ h2.sec-sub-title {
 
 /* FAQ */
 .accordion-button {
-  background-color: #3C458B;
+  background-color: #3c458b;
   color: white;
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #DE545B;
+  background-color: #de545b;
   color: white;
 }
 
@@ -435,13 +435,13 @@ h2.sec-sub-title {
   padding-left: 50px; /* Make room for the quote icon */
   position: relative;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  border-left: 5px solid #DE545B; /* A colored border for a pop of color */
+  border-left: 5px solid #de545b; /* A colored border for a pop of color */
   margin: 20px 0;
   overflow: hidden; /* Ensures that children elements do not overflow the rounded corners */
 }
 
 .testimonial-card::before {
-  content: '“'; /* Unicode character for left double quotation mark */
+  content: "“"; /* Unicode character for left double quotation mark */
   font-size: 80px;
   position: absolute;
   left: 10px; /* Adjust based on padding */
@@ -451,11 +451,15 @@ h2.sec-sub-title {
 }
 
 .testimonial-card::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 5px;
-  background: linear-gradient(to right, #ffffff, #3C458B); /* A gradient at the bottom */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #3c458b
+  ); /* A gradient at the bottom */
   bottom: 0;
   left: 0;
 }
@@ -468,12 +472,12 @@ h2.sec-sub-title {
 .testimonial-author {
   text-align: right;
   font-weight: bold;
-  color: #3C458B; /* Color to match the theme */
+  color: #3c458b; /* Color to match the theme */
 }
 
 /* Review Button */
 .btn-review {
-  background-color: #DE545B; /* A green background for action encouragement */
+  background-color: #de545b; /* A green background for action encouragement */
   color: white;
   border: 2px solid transparent;
   transition: all 0.3s ease;
@@ -481,18 +485,18 @@ h2.sec-sub-title {
 
 .btn-review:hover {
   background-color: white;
-  color: #DE545B;
-  border-color: #DE545B;
+  color: #de545b;
+  border-color: #de545b;
 }
 
 /* FOOTER */
 .site-footer {
-  background-color: #A7A7A7; /* Dark background for contrast */
-  color: #ffffff; /* White text for readability */ 
+  background-color: #a7a7a7; /* Dark background for contrast */
+  color: #ffffff; /* White text for readability */
 }
 
 .site-footer span {
-  color: #DE545B;
+  color: #de545b;
 }
 
 .footer-link {
@@ -501,7 +505,7 @@ h2.sec-sub-title {
 }
 
 .footer-link:hover {
-  color: #DE545B; /* Highlight color when hovered */
+  color: #de545b; /* Highlight color when hovered */
 }
 
 .site-footer i {
@@ -509,7 +513,7 @@ h2.sec-sub-title {
 }
 
 .site-footer i:hover {
-  color: #3C458B; /* Highlight color when hovered */
+  color: #3c458b; /* Highlight color when hovered */
 }
 
 .site-footer h5 {
@@ -527,12 +531,12 @@ h2.sec-sub-title {
 /* LOCAL SEO */
 /* Adjustments specific to the Local SEO Accordion */
 #localSeoAccordion .accordion-button {
-  background-color: #3C458B; /* Primary color */
+  background-color: #3c458b; /* Primary color */
   color: white;
 }
 
 #localSeoAccordion .accordion-button:not(.collapsed) {
-  background-color: #DE545B; /* Slightly darker for contrast when expanded */
+  background-color: #de545b; /* Slightly darker for contrast when expanded */
   color: white;
 }
 
@@ -546,12 +550,12 @@ h2.sec-sub-title {
 
 /* Styling for Local SEO links */
 .seo-link {
-  color: #3C458B; /* Normal link color */
+  color: #3c458b; /* Normal link color */
   text-decoration: none;
 }
 
 .seo-link:hover {
-  color: #DE545B; /* Hover state color */
+  color: #de545b; /* Hover state color */
 }
 
 #localSeoAccordion .accordion-header .accordion-button {
@@ -562,7 +566,7 @@ h2.sec-sub-title {
 
 /* CONTACT */
 .btn-submit {
-  background-color: #DE545B; 
+  background-color: #de545b;
   color: white;
   border: 2px solid transparent;
   transition: all 0.3s ease;
@@ -570,6 +574,6 @@ h2.sec-sub-title {
 
 .btn-submit:hover {
   background-color: white;
-  color: #DE545B;
-  border-color: #DE545B;
+  color: #de545b;
+  border-color: #de545b;
 }
