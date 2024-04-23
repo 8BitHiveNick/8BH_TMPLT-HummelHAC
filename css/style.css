@@ -578,3 +578,82 @@ h2.sec-sub-title {
   color: #de545b;
   border-color: #de545b;
 }
+
+/* REVIEW */
+#review {
+  padding-top: 150px; /* Adjust as needed to ensure enough space from the navbar */
+  padding-bottom: 80px; /* Provides ample space around the content */
+}
+
+/* Slider Track */
+input[type="range"] {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 15px; /* Specified height */
+  background: #ddd; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (cross-browser) */
+  transition: opacity 0.2s;
+}
+
+/* Slider Handle */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: #3c458b; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: #3c458b;
+  cursor: pointer; /* Cursor on hover */
+}
+
+/* Optional: Slider focus */
+input[type="range"]:focus {
+  outline: none; /* Removes the outline */
+  opacity: 1; /* Fully opaque on focus */
+}
+
+/* Optional: Specific styles for satisfaction rating icons */
+#satisfactionRatingIcons .fas {
+  color: #3c458b; /* Blue color for the icons */
+  font-size: 35px; /* Adjust size as needed */
+}
+
+/* Custom styles for radio buttons */
+.custom-radio .form-check-input {
+  /* Hide the default radio button */
+  appearance: none;
+  background-color: #fff; /* Default background */
+  border: 2px solid #3c458b; /* Blue border */
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  height: 20px;
+  width: 20px;
+  margin-right: 8px;
+  border-radius: 50%; /* Circle border */
+  cursor: pointer; /* Hand cursor on hover */
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+}
+
+.custom-radio .form-check-input:checked {
+  background-color: #3c458b; /* Blue background on check */
+  border-color: #3c458b; /* Blue border on check */
+}
+
+.custom-radio .form-check-input:checked::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #fff; /* White center on check */
+  border-radius: 50%; /* Circle inside circle */
+}
