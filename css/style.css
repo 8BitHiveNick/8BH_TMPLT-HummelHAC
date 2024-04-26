@@ -497,7 +497,7 @@ h2.sec-sub-title {
 }
 
 .site-footer span {
-  color: #de545b;
+  color: #3c458b;
 }
 
 .footer-link {
@@ -660,12 +660,12 @@ input[type="range"]:focus {
 
 /* COMING SOON */
 .icon-circle {
-  font-size: 48px; /* Large icon size */
+  font-size: 60px; /* Large icon size */
   color: #ffffff; /* White icon color */
   background-color: #de545b; /* Circle background color */
   border-radius: 50%; /* Makes the div circular */
-  width: 80px; /* Width of the circle */
-  height: 80px; /* Height of the circle */
+  width: 100px; /* Width of the circle */
+  height: 100px; /* Height of the circle */
   display: flex;
   align-items: center;
   justify-content: center;
