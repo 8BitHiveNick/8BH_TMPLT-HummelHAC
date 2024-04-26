@@ -657,3 +657,17 @@ input[type="range"]:focus {
   background-color: #fff; /* White center on check */
   border-radius: 50%; /* Circle inside circle */
 }
+
+/* COMING SOON */
+.icon-circle {
+  font-size: 48px; /* Large icon size */
+  color: #ffffff; /* White icon color */
+  background-color: #de545b; /* Circle background color */
+  border-radius: 50%; /* Makes the div circular */
+  width: 80px; /* Width of the circle */
+  height: 80px; /* Height of the circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px; /* Center the icon and add space below */
+}
