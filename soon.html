@@ -108,7 +108,7 @@
           <div class="text-center">
             <h2 class="sec-sub-title mb-4">Get in touch</h2>
           </div>
-          <div class="col-md-4 text-center">
+          <div class="col-md-12 text-center">
             <h4>Direct Contact</h4>
             <p>
               <i class="fas fa-phone-alt" style="color: #de545b"></i> (216)
@@ -131,41 +131,6 @@
                 ><i class="fab fa-facebook-square" style="color: #de545b"></i
               ></a>
             </p>
-          </div>
-          <div class="col-md-7">
-            <form action="sendmail.php" method="POST">
-              <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  name="name"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Message</label>
-                <textarea
-                  class="form-control"
-                  id="message"
-                  name="message"
-                  rows="3"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn-submit btn-primary">Send</button>
-            </form>
           </div>
         </div>
       </div>
@@ -285,5 +250,7 @@
         });
       });
     </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
