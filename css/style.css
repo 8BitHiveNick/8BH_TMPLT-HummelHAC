@@ -791,28 +791,6 @@ input[type="range"]:focus {
   margin-bottom: 20px;
 }
 
-.btn-heating,
-.btn-cooling,
-.btn-gas,
-.btn-plumbing {
-  color: white;
-  background-color: var(
-    --service-color
-  ); /* Match button background to the service color */
-  border: none;
-}
-
-.btn-heating:hover,
-.btn-cooling:hover,
-.btn-gas:hover,
-.btn-plumbing:hover {
-  background-color: darken(
-    var(--service-color),
-    10%
-  ); /* Slightly darken the button on hover for a subtle effect */
-  color: #fff;
-}
-
 /* Responsive Adjustments for smaller screens */
 @media (max-width: 768px) {
   .service-jumbotron .row {
