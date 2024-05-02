@@ -119,10 +119,10 @@ body {
   text-transform: uppercase;
   display: inline-block;
   background: #f3f3f5;
-  box-shadow: 9px 9px 12px #e4e4e4, -9px -9px 12px #ffffff;
+  box-shadow: 9px 9px 12px rgba(60, 69, 139, 0.6); /* Adjusted shadow color */
   padding: 3px 10px;
   border-radius: 40px;
-  color: #de545b;
+  color: #3c458b; /* You can change this if you want to adjust the text color too */
   font-size: 28px;
   justify-content: center;
   align-items: center;
@@ -277,6 +277,10 @@ body {
   align-items: center; /* Centers children horizontally in the card */
 }
 
+.card h5.card-title {
+  font-weight: bold; /* Makes text bold */
+}
+
 .card-body {
   text-align: center; /* Centers text and inline elements like buttons */
 }
@@ -352,6 +356,24 @@ h2.sec-sub-title {
   background-color: white;
   color: #3f668f;
   border-color: #3f668f;
+}
+
+/* Define border styles */
+.border-custom {
+  border: 2px solid; /* Change thickness here */
+  border-color: var(
+    --border-color
+  ); /* Uses the custom property for dynamic coloring */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for depth */
+}
+
+.icon-background {
+  border-bottom: 5px solid var(--border-color); /* Adds a thematic element under icons */
+}
+
+/* Optional: add some fancy borders */
+.border-custom {
+  border-style: solid; /* Other styles: dotted, dashed, double */
 }
 
 /* BRANDS */
@@ -670,4 +692,143 @@ input[type="range"]:focus {
   align-items: center;
   justify-content: center;
   margin: 0 auto 20px; /* Center the icon and add space below */
+}
+
+/* SERVICES PAGE - HERO SECTION */
+.hero-section {
+  position: relative;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.hero-background {
+  position: relative;
+  width: 100%;
+  opacity: 0.95;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+.btn-light {
+  border-color: #fff;
+}
+
+.service-jumbotron {
+  position: relative;
+  background-color: #fff; /* White background for the jumbotron */
+  padding: 20px;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures the pseudo-element does not overflow the container */
+}
+
+.service-jumbotron::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 50px; /* Width of the gradient border */
+  background: linear-gradient(
+    to right,
+    var(--service-color) 0%,
+    transparent 100%
+  );
+  z-index: 0;
+}
+
+.service-title,
+.service-description,
+.btn {
+  position: relative;
+  z-index: 1; /* Ensures text and buttons appear above the pseudo-element */
+}
+
+.service-jumbotron::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 20px; /* Width of the gradient border */
+  background: linear-gradient(
+    to right,
+    var(--service-color) 0%,
+    transparent 100%
+  );
+  z-index: 0;
+}
+
+.service-title,
+.service-description,
+.btn {
+  position: relative;
+  z-index: 1; /* Ensures text and buttons appear above the pseudo-element */
+}
+
+.service-title {
+  color: var(--service-color); /* Use the color variable for the title */
+  font-size: 2.4rem; /* Larger font size for header */
+}
+
+.service-description {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-heating,
+.btn-cooling,
+.btn-gas,
+.btn-plumbing {
+  color: white;
+  background-color: var(
+    --service-color
+  ); /* Match button background to the service color */
+  border: none;
+}
+
+.btn-heating:hover,
+.btn-cooling:hover,
+.btn-gas:hover,
+.btn-plumbing:hover {
+  background-color: darken(
+    var(--service-color),
+    10%
+  ); /* Slightly darken the button on hover for a subtle effect */
+  color: #fff;
+}
+
+/* Responsive Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .service-jumbotron .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-jumbotron .col-md-4 {
+    order: -1; /* Moves the icon above */
+    margin-bottom: 10px; /* Adds some space below the icon */
+  }
+
+  .service-jumbotron .col-md-8,
+  .service-jumbotron .col-md-4 {
+    text-align: center; /* Center text and icon */
+    width: 100%; /* Take full width to utilize space */
+  }
 }
