@@ -421,35 +421,6 @@ h2.sec-sub-title {
   opacity: 1;
 }
 
-/* FAQ */
-.accordion-button {
-  background-color: #3c458b;
-  color: white;
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: #de545b;
-  color: white;
-}
-
-.accordion-button:focus {
-  box-shadow: none;
-}
-
-.accordion-body {
-  background-color: #f8f9fa;
-}
-
-.accordion-button .fa-chevron-down {
-  color: white;
-}
-
-#localSeoAccordion .accordion-header .accordion-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
 /* TESTIMONIALS */
 .testimonial-card {
   background: #ffffff;
@@ -551,41 +522,87 @@ h2.sec-sub-title {
   margin-bottom: 10px; /* Space between list items */
 }
 
-/* LOCAL SEO */
-/* Adjustments specific to the Local SEO Accordion */
-#localSeoAccordion .accordion-button {
-  background-color: #3c458b; /* Primary color */
+/* FAQ */
+.accordion-button {
+  background-color: #3c458b;
+  color: white;
+  position: relative;
+  padding-right: 1.5rem; /* Adjust padding to make room for custom icon */
+  background-image: none !important; /* Remove default arrow */
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #de545b;
   color: white;
 }
 
-#localSeoAccordion .accordion-button:not(.collapsed) {
-  background-color: #de545b; /* Slightly darker for contrast when expanded */
-  color: white;
-}
-
-#localSeoAccordion .accordion-button:focus {
+.accordion-button:focus {
   box-shadow: none;
 }
 
-#localSeoAccordion .accordion-body {
+.accordion-body {
   background-color: #f8f9fa;
 }
 
-/* Styling for Local SEO links */
-.seo-link {
-  color: #3c458b; /* Normal link color */
-  text-decoration: none;
+/* Remove Bootstrap's default caret */
+.accordion-button::before,
+.accordion-button::after {
+  display: none !important; /* Hide any existing pseudo-elements */
 }
 
-.seo-link:hover {
-  color: #de545b; /* Hover state color */
+/* Add custom chevron icon */
+.custom-chevron::before {
+  content: '\f078'; /* FontAwesome down arrow icon */
+  font-family: 'Font Awesome 6 Free'; /* Ensure the correct FontAwesome family */
+  font-weight: 900; /* Ensure the correct FontAwesome weight */
+  color: white;
+  position: absolute;
+  right: 1rem;
+  transition: transform 0.2s;
 }
 
+.accordion-button:not(.collapsed) .custom-chevron::before {
+  content: '\f077'; /* FontAwesome up arrow icon */
+  transform: rotate(0deg); /* Rotate the icon when expanded */
+}
+
+/* Ensure text alignment */
 #localSeoAccordion .accordion-header .accordion-button {
-  width: 100%; /* Ensure the button spans the full width of its parent */
-  text-align: center; /* Center the text within the button */
-  justify-content: center; /* Center the button's content for flex display */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+
+#localSeoAccordion .accordion-button {
+  background-color: #3c458b;
+  color: white;
+  position: relative;
+  padding-right: 1.5rem; /* Adjust padding to make room for custom icon */
+  background-image: none !important; /* Remove default arrow */
+}
+
+#localSeoAccordion .accordion-button:not(.collapsed) {
+  background-color: #de545b;
+  color: white;
+}
+
+#localSeoAccordion .accordion-button .custom-chevron::before {
+  content: '\f078'; /* FontAwesome down arrow icon */
+  font-family: 'Font Awesome 6 Free'; /* Ensure the correct FontAwesome family */
+  font-weight: 900; /* Ensure the correct FontAwesome weight */
+  color: white;
+  position: absolute;
+  right: 1rem;
+  transition: transform 0.2s;
+}
+
+#localSeoAccordion .accordion-button:not(.collapsed) .custom-chevron::before {
+  content: '\f077'; /* FontAwesome up arrow icon */
+  transform: rotate(0deg); /* Rotate the icon when expanded */
+}
+
+
 
 /* CONTACT */
 .btn-submit {
